@@ -351,6 +351,6 @@ const setupDeepgram = (mediaStream) => {
   return deepgram;
 };
 
-wsserver.listen(HTTP_SERVER_PORT, function () {
-  console.log("Server listening on: http://localhost:%s", HTTP_SERVER_PORT);
+wsserver.listen(PORT, function () {
+  console.log("Server listening on: http://localhost:%s", PORT);
 });
