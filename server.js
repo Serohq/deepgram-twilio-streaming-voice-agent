@@ -11,7 +11,7 @@ const WebSocketServer = require("websocket").server;
 const dispatcher = new HttpDispatcher();
 const wsserver = http.createServer(handleRequest); // Create HTTP server to handle requests
 
-const HTTP_SERVER_PORT = 8080; // Define the server port
+const PORT = process.env.PORT || 8080; // Define the server port
 let streamSid = ''; // Variable to store stream session ID
 
 const mediaws = new WebSocketServer({
